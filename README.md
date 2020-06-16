@@ -27,6 +27,38 @@ Check **Main Features** Section below for more details.
 ![frodo_hug](https://cloud.githubusercontent.com/assets/1360604/10925718/e7ea4318-8290-11e5-91b4-f2bfbde65319.gif)
 
 
+
+# useage
+
+## pugin:
+
+
+
+```
+in build.gradle of rootProject 
+
+
+buildscript {
+	repositories {
+        maven {
+            url "https://jitpack.io"
+        }
+      }
+ dependencies {
+			classpath "com.github.skyNet2017.frodo2:frodo2-plugin:0.9.3"
+			}
+```
+
+```
+in build.gradle of app or subModule 
+
+apply plugin: 'com.fernandocejas.frodo2'
+
+dependencies {
+	implementation("com.github.skyNet2017.frodo2:frodo2-api:0.9.2")
+}
+```
+
 Main Features
 =========================
 
@@ -194,7 +226,7 @@ Clone the repo and use the scripts listed below in order to to run/install/execu
  * `./run_frodo2_android.sh` - Compiles frodo2 and run the android sample application.
  * `./run_frodo2_java` - Compiles frodo2 and run the java sample application.
  * `./gradlew runUnitTests` - Execute all unit tests in the project.
- 
+
 Contribution
 =========================
 
@@ -205,13 +237,13 @@ License
 =========================
 
     Copyright 2018 Fernando Cejas
-
+    
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
-
+    
        http://www.apache.org/licenses/LICENSE-2.0
-
+    
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.

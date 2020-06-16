@@ -28,8 +28,8 @@ class JavaBuild extends Build {
   void configure() {
     project.dependencies {
       implementation "org.aspectj:aspectjrt:$ASPECTJ_VERSION"
-      implementation "com.fernandocejas.frodo2:frodo2-runtime-java:$FRODO_VERSION"
-      implementation "com.fernandocejas.frodo2:frodo2-logger:$FRODO_VERSION"
+      implementation "com.github.skyNet2017.frodo2:frodo2-runtime-java:$FRODO_VERSION"
+      implementation "com.github.skyNet2017.frodo2:frodo2-logger:$FRODO_VERSION"
     }
 
     final JavaCompile javaCompile = project.compileJava

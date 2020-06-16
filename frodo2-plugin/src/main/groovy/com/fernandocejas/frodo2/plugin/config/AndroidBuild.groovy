@@ -29,8 +29,8 @@ class AndroidBuild extends Build {
   void configure() {
     project.dependencies {
       debugImplementation "org.aspectj:aspectjrt:$ASPECTJ_VERSION"
-      debugImplementation "com.fernandocejas.frodo2:frodo2-runtime-android:$FRODO_VERSION"
-      debugImplementation "com.fernandocejas.frodo2:frodo2-logger:$FRODO_VERSION"
+      debugImplementation "com.github.skyNet2017.frodo2:frodo2-runtime-android:$FRODO_VERSION"
+      debugImplementation "com.github.skyNet2017.frodo2:frodo2-logger:$FRODO_VERSION"
     }
 
     final def log = project.logger

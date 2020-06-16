@@ -18,7 +18,7 @@ import org.gradle.api.Project
 
 abstract class Build {
 
-  protected static final String FRODO_VERSION = "0.9.0"
+  protected static final String FRODO_VERSION = "0.9.1"
   protected static final String ASPECTJ_VERSION = "1.8.6"
 
   protected def project
@@ -41,7 +41,7 @@ abstract class Build {
 
   private void setupDependencies() {
     project.dependencies {
-      implementation "com.fernandocejas.frodo2:frodo2-api:$FRODO_VERSION"
+      implementation "com.github.skyNet2017.frodo2:frodo2-api:$FRODO_VERSION"
     }
   }
 

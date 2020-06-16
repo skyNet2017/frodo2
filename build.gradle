@@ -1,6 +1,6 @@
 buildscript {
   repositories {
-    mavenLocal()
+   // mavenLocal()
     google()
     jcenter()
   }
@@ -16,7 +16,7 @@ subprojects {
     maven {
       url "http://dl.bintray.com/android10/maven"
     }
-    mavenLocal()
+    //mavenLocal()
     jcenter()
     google()
   }

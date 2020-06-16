@@ -18,7 +18,7 @@ import org.gradle.api.Project
 
 abstract class Build {
 
-  protected static final String FRODO_VERSION = "0.9.1"
+  protected static final String FRODO_VERSION = "0.9.2"
   protected static final String ASPECTJ_VERSION = "1.8.6"
 
   protected def project

@@ -3,10 +3,11 @@ buildscript {
     mavenLocal()
     jcenter()
     google()
+    maven { url 'https://jitpack.io' }
   }
   dependencies {
     classpath "com.android.tools.build:gradle:$project.androidBuildToolsVersion"
-    classpath "com.fernandocejas.frodo2:frodo2-plugin:$project.version"
+    classpath "com.github.skyNet2017.frodo2:frodo2-plugin:0.9.3"
   }
 }
 
